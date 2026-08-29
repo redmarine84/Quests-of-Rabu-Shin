@@ -1,26 +1,627 @@
+```html
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Quests of Rabu Shin: Tales of the Krasis | ShareForge</title>
-<link rel="icon" href="shareforge.png">
-<style>
-*{box-sizing:border-box}body{margin:0;background:#07101c;color:#f4f8fc;font:16px/1.6 Segoe UI,Arial,sans-serif}
-.hero{background:linear-gradient(135deg,#0f1b2b 0%,#07101c 52%,#08263d 100%);color:#fff;padding:56px 24px;border-bottom:3px solid #ff8419}.hero-inner{max-width:1050px;margin:auto;display:flex;gap:42px;align-items:center}.hero-inner>div{flex:1;min-width:0}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;color:#56c8ff;font-size:13px;font-weight:bold}.hero h1{font-size:52px;line-height:1.05;margin:8px 0 16px}.meta{opacity:.86}.cover{width:290px;max-height:390px;object-fit:cover;border-radius:18px;box-shadow:0 18px 45px #02070d;border:1px solid rgba(255,255,255,.25)}
-main{max-width:1050px;margin:30px auto;padding:0 20px 70px}.card{background:#0f1b2b;border:1px solid #2b415c;border-radius:16px;padding:28px;margin:18px 0;box-shadow:0 8px 25px rgba(0,0,0,.22)}.card h2{color:#ff8419;margin-top:0}.tags{display:flex;flex-wrap:wrap}.tag{background:#102f49;color:#86d8ff;border-radius:999px;padding:5px 11px;font-size:14px;margin:0 8px 8px 0}.entry{border-top:1px solid #2b415c;padding:20px 0}.entry:first-of-type{border-top:0}.entry h3{margin:0;color:#56c8ff}.summary{color:#a6b8cc;font-weight:600}.content{white-space:pre-wrap}.downloads{display:flex;flex-wrap:wrap}.download{display:block;text-decoration:none;color:#f4f8fc;border:1px solid #2b415c;border-radius:12px;padding:14px;background:#17273d;margin:0 12px 12px 0;min-width:230px}.download:hover{border-color:#16a8ff}footer{text-align:center;color:#a6b8cc;padding:30px}footer strong{color:#ff8419}.brand-mark{width:30px;height:30px;vertical-align:middle;margin-right:8px;border-radius:7px}
-@media(max-width:760px){.hero-inner{display:block}.cover{width:100%;max-width:420px;margin-top:24px}.hero{padding-top:38px}.hero h1{font-size:38px}}
-@media print{body{background:#fff}.hero{background:#fff;color:#111;padding:20px 0}.hero-inner{display:block}.cover{max-width:260px;box-shadow:none}.card{box-shadow:none;break-inside:avoid}footer{display:none}}
-</style></head><body>
-<header class="hero"><div class="hero-inner"><div>
-<div class="eyebrow">D&amp;D Campaign</div>
-<h1>Quests of Rabu Shin: Tales of the Krasis</h1>
-<div class="meta">Created by Tim McIntyre</div>
-<p>The Quests of Rabu Shin: Tales of the Krasis is an epic D&amp;D 5e campaign spanning the twelve settlements of Vael Turog. What begins with dying fields, mutated livestock, and unnatural whispers in Greymoor Hollow grows into a continent-wide struggle against the Krasis—engineered hybrids created through forced magical evolution. The heroes investigate haunted seas, breathing crystals, flesh-growing forests, military sieges, sunken laboratories, political conspiracies, mobile mutation trials, frozen experiments, and ancient desert engines. Each discovery reveals another piece of Rabu Shin’s network and his belief that natural life is weak, unfinished, and meant to be redesigned. The journey ultimately leads to Aetherfall, a floating arcane city transformed into a living evolutionary engine. There, the party must confront Rabu Shin, the Prime Krasis, and decide whether his power should be destroyed, controlled, preserved, or claimed—shaping the future of Vael Turog and determining whether evolution becomes salvation, tyranny, or catastrophe.</p>
-</div>
-<img class="cover" src="Quest of Rabu Shin Cover (NEW).png" alt="Project cover">
-</div></header><main>
-<section class="card"><h2>Downloads</h2><div class="downloads">
-<a class="download" href="Quests_of_Rabu_Shin_Adventure_Book_Complete_Chapters_1_to_12.pdf" download><strong>Quests_of_Rabu_Shin_Adventure_Book_Complete_Chapters_1_to_12.pdf</strong><br><small>Documents · 9.7 MB</small></a>
-<a class="download" href="Quests_of_Rabu_Shin_Player_Guide_Print_Ready.pdf" download><strong>Quests_of_Rabu_Shin_Player_Guide_Print_Ready.pdf</strong><br><small>Documents · 1.3 MB</small></a>
-</div></section>
-</main><footer><img class="brand-mark" src="shareforge.png" alt="ShareForge">Created with <strong>ShareForge</strong></footer></body></html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Quests of Rabu Shin: Tales of the Krasis | ShareForge</title>
+
+    <meta name="robots" content="index,follow">
+
+    <link rel="icon" href="shareforge.png">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #07101c;
+            color: #f4f8fc;
+            font: 16px/1.6 Segoe UI, Arial, sans-serif;
+        }
+
+        /* =========================
+           HERO
+           ========================= */
+
+        .hero {
+            background: linear-gradient(
+                135deg,
+                #0f1b2b 0%,
+                #07101c 52%,
+                #08263d 100%
+            );
+            color: #fff;
+            padding: 56px 24px;
+            border-bottom: 3px solid #ff8419;
+        }
+
+        .hero-inner {
+            max-width: 1050px;
+            margin: auto;
+            display: flex;
+            gap: 42px;
+            align-items: center;
+        }
+
+        .hero-inner > div {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            color: #56c8ff;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.05;
+            margin: 8px 0 16px;
+        }
+
+        .meta {
+            opacity: .86;
+        }
+
+        .cover {
+            width: 290px;
+            max-height: 390px;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 18px 45px #02070d;
+            border: 1px solid rgba(255,255,255,.25);
+        }
+
+        /* =========================
+           NAVIGATION
+           ========================= */
+
+        .main-nav {
+            background: #0b1624;
+            border-bottom: 1px solid #2b415c;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main-nav-inner {
+            max-width: 1050px;
+            margin: auto;
+            padding: 12px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .main-nav a {
+            color: #86d8ff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 7px 11px;
+            border-radius: 8px;
+            transition: .2s;
+        }
+
+        .main-nav a:hover {
+            background: #17273d;
+            color: #ffffff;
+        }
+
+        /* =========================
+           MAIN
+           ========================= */
+
+        main {
+            max-width: 1050px;
+            margin: 30px auto;
+            padding: 0 20px 70px;
+        }
+
+        .card {
+            background: #0f1b2b;
+            border: 1px solid #2b415c;
+            border-radius: 16px;
+            padding: 28px;
+            margin: 18px 0;
+            box-shadow: 0 8px 25px rgba(0,0,0,.22);
+        }
+
+        .card h2 {
+            color: #ff8419;
+            margin-top: 0;
+        }
+
+        .card h3 {
+            color: #56c8ff;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #102f49;
+            color: #86d8ff;
+            border-radius: 999px;
+            padding: 5px 11px;
+            font-size: 14px;
+            margin: 0 8px 8px 0;
+        }
+
+        .entry {
+            border-top: 1px solid #2b415c;
+            padding: 20px 0;
+        }
+
+        .entry:first-of-type {
+            border-top: 0;
+        }
+
+        .entry h3 {
+            margin: 0;
+            color: #56c8ff;
+        }
+
+        .summary {
+            color: #a6b8cc;
+            font-weight: 600;
+        }
+
+        .content {
+            white-space: pre-wrap;
+        }
+
+        /* =========================
+           DOWNLOADS
+           ========================= */
+
+        .downloads {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .download {
+            display: block;
+            text-decoration: none;
+            color: #f4f8fc;
+            border: 1px solid #2b415c;
+            border-radius: 12px;
+            padding: 14px;
+            background: #17273d;
+            margin: 0 12px 12px 0;
+            min-width: 230px;
+            transition: .2s;
+        }
+
+        .download:hover {
+            border-color: #16a8ff;
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           LEGAL SECTION
+           ========================= */
+
+        .legal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .legal-link {
+            display: block;
+            background: #17273d;
+            border: 1px solid #2b415c;
+            border-radius: 12px;
+            padding: 18px;
+            color: #f4f8fc;
+            text-decoration: none;
+            transition: .2s;
+        }
+
+        .legal-link:hover {
+            border-color: #56c8ff;
+            transform: translateY(-2px);
+        }
+
+        .legal-link strong {
+            color: #56c8ff;
+            display: block;
+            margin-bottom: 6px;
+            font-size: 18px;
+        }
+
+        .legal-link span {
+            color: #a6b8cc;
+            font-size: 14px;
+        }
+
+        .warning {
+            background: #271d0d;
+            border: 1px solid #a86917;
+            border-left: 5px solid #ff8419;
+            border-radius: 12px;
+            padding: 18px;
+            margin-top: 20px;
+            color: #ffe1b8;
+        }
+
+        .warning code {
+            color: #ffffff;
+        }
+
+        /* =========================
+           FOOTER
+           ========================= */
+
+        footer {
+            text-align: center;
+            color: #a6b8cc;
+            padding: 30px;
+            border-top: 1px solid #2b415c;
+            background: #07101c;
+        }
+
+        footer strong {
+            color: #ff8419;
+        }
+
+        footer a {
+            color: #56c8ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .brand-mark {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 8px;
+            border-radius: 7px;
+        }
+
+        .footer-line {
+            margin-top: 8px;
+        }
+
+        /* =========================
+           RESPONSIVE
+           ========================= */
+
+        @media(max-width: 760px) {
+            .hero-inner {
+                display: block;
+            }
+
+            .cover {
+                width: 100%;
+                max-width: 420px;
+                margin-top: 24px;
+            }
+
+            .hero {
+                padding-top: 38px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .main-nav-inner {
+                justify-content: center;
+            }
+        }
+
+        /* =========================
+           PRINT
+           ========================= */
+
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .hero {
+                background: #fff;
+                color: #111;
+                padding: 20px 0;
+            }
+
+            .hero-inner {
+                display: block;
+            }
+
+            .cover {
+                max-width: 260px;
+                box-shadow: none;
+            }
+
+            .card {
+                box-shadow: none;
+                break-inside: avoid;
+            }
+
+            .main-nav,
+            footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         HERO
+         ========================= -->
+
+    <header class="hero">
+        <div class="hero-inner">
+
+            <div>
+                <div class="eyebrow">D&amp;D Campaign</div>
+
+                <h1>Quests of Rabu Shin: Tales of the Krasis</h1>
+
+                <div class="meta">
+                    Created by Tim McIntyre
+                </div>
+
+                <p>
+                    The Quests of Rabu Shin: Tales of the Krasis is an epic
+                    D&amp;D 5e campaign spanning the twelve settlements of
+                    Vael Turog.
+                </p>
+
+                <p>
+                    What begins with dying fields, mutated livestock, and
+                    unnatural whispers in Greymoor Hollow grows into a
+                    continent-wide struggle against the Krasis—engineered
+                    hybrids created through forced magical evolution.
+                </p>
+
+                <p>
+                    The heroes investigate haunted seas, breathing crystals,
+                    flesh-growing forests, military sieges, sunken laboratories,
+                    political conspiracies, mobile mutation trials, frozen
+                    experiments, and ancient desert engines.
+                </p>
+
+                <p>
+                    Each discovery reveals another piece of Rabu Shin's network
+                    and his belief that natural life is weak, unfinished, and
+                    meant to be redesigned.
+                </p>
+
+                <p>
+                    The journey ultimately leads to Aetherfall, a floating
+                    arcane city transformed into a living evolutionary engine.
+                    There, the party must confront Rabu Shin, the Prime Krasis,
+                    and decide whether his power should be destroyed,
+                    controlled, preserved, or claimed—shaping the future of
+                    Vael Turog and determining whether evolution becomes
+                    salvation, tyranny, or catastrophe.
+                </p>
+            </div>
+
+            <img
+                class="cover"
+                src="Quest of Rabu Shin Cover (NEW).png"
+                alt="Quests of Rabu Shin campaign cover">
+        </div>
+    </header>
+
+    <!-- =========================
+         MAIN NAVIGATION
+         ========================= -->
+
+    <nav class="main-nav">
+        <div class="main-nav-inner">
+            <a href="#downloads">Downloads</a>
+            <a href="#ai-game-master">AI Game Master</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="support.html">Support</a>
+            <a href="data-deletion.html">Data Deletion</a>
+            <a href="licenses.html">Licenses</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- =========================
+             DOWNLOADS
+             ========================= -->
+
+        <section class="card" id="downloads">
+
+            <h2>Downloads</h2>
+
+            <div class="downloads">
+
+                <a
+                    class="download"
+                    href="Quests_of_Rabu_Shin_Adventure_Book_Complete_Chapters_1_to_12.pdf"
+                    download>
+
+                    <strong>
+                        Quests_of_Rabu_Shin_Adventure_Book_Complete_Chapters_1_to_12.pdf
+                    </strong>
+
+                    <br>
+
+                    <small>
+                        Documents · 9.7 MB
+                    </small>
+                </a>
+
+                <a
+                    class="download"
+                    href="Quests_of_Rabu_Shin_Player_Guide_Print_Ready.pdf"
+                    download>
+
+                    <strong>
+                        Quests_of_Rabu_Shin_Player_Guide_Print_Ready.pdf
+                    </strong>
+
+                    <br>
+
+                    <small>
+                        Documents · 1.3 MB
+                    </small>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             AI GAME MASTER
+             ========================= -->
+
+        <section class="card" id="ai-game-master">
+
+            <div class="eyebrow">
+                Discord Activity
+            </div>
+
+            <h2>
+                <span data-app-name>RabuShin AI Game Master</span>
+            </h2>
+
+            <p>
+                <strong>RabuShin AI Game Master</strong> is a Discord Activity
+                for cooperative fantasy role-playing campaigns featuring an
+                AI-powered Game Master.
+            </p>
+
+            <p>
+                Players can participate in multiplayer campaigns, create and
+                manage characters, communicate with other campaign members,
+                manage inventories and spellbooks, and interact with the AI
+                Game Master as their adventure progresses.
+            </p>
+
+            <p>
+                The legal, privacy, support, data-deletion, and attribution
+                information for RabuShin AI Game Master is available below.
+            </p>
+
+            <div class="legal-grid">
+
+                <a class="legal-link" href="terms.html">
+                    <strong>Terms of Service</strong>
+                    <span>
+                        Rules and conditions governing use of RabuShin AI Game
+                        Master.
+                    </span>
+                </a>
+
+                <a class="legal-link" href="privacy.html">
+                    <strong>Privacy Policy</strong>
+                    <span>
+                        Information about what data is collected, stored,
+                        processed, and shared.
+                    </span>
+                </a>
+
+                <a class="legal-link" href="support.html">
+                    <strong>Support</strong>
+                    <span>
+                        Get assistance with the application, account, campaigns,
+                        or technical problems.
+                    </span>
+                </a>
+
+                <a class="legal-link" href="data-deletion.html">
+                    <strong>Data Deletion</strong>
+                    <span>
+                        Learn how to request deletion of personal or campaign
+                        information.
+                    </span>
+                </a>
+
+                <a class="legal-link" href="licenses.html">
+                    <strong>Licenses &amp; Attribution</strong>
+                    <span>
+                        Third-party software, services, licenses, and required
+                        attribution information.
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="warning">
+
+                <strong>Before public launch:</strong>
+
+                Make sure <code>site-config.js</code> contains the permanent
+                support information for RabuShin AI Game Master, including your
+                permanent Discord support-server invitation if you are using
+                Discord for application support.
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer>
+
+        <div>
+            <img
+                class="brand-mark"
+                src="shareforge.png"
+                alt="ShareForge">
+
+            Created with <strong>ShareForge</strong>
+        </div>
+
+        <div class="footer-line">
+            <span data-app-name>RabuShin AI Game Master</span>
+            &nbsp;•&nbsp;
+            Effective
+            <span data-effective-date></span>
+            &nbsp;•&nbsp;
+            <a data-support-link href="support.html">Support</a>
+        </div>
+
+        <div class="footer-line">
+            <a href="terms.html">Terms of Service</a>
+            &nbsp;•&nbsp;
+            <a href="privacy.html">Privacy Policy</a>
+            &nbsp;•&nbsp;
+            <a href="data-deletion.html">Data Deletion</a>
+            &nbsp;•&nbsp;
+            <a href="licenses.html">Licenses</a>
+        </div>
+
+    </footer>
+
+    <!-- Existing Legal Site Configuration -->
+    <script src="site-config.js"></script>
+    <script src="legal.js"></script>
+
+</body>
+</html>
+```
