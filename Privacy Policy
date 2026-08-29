@@ -1,0 +1,344 @@
+RabuShinAIGM Privacy Policy
+
+Effective Date: August 29, 2026
+Last Updated: August 29, 2026
+
+This Privacy Policy explains how RabuShinAIGM ("RabuShinAIGM," "we," "us," or "our") collects, uses, stores, shares, and protects information when you use the RabuShinAIGM Discord application and related services.
+
+By using RabuShinAIGM, you acknowledge the practices described in this Privacy Policy.
+
+1. Information We Collect
+
+The information RabuShinAIGM processes depends on the features you use.
+
+Discord Information
+
+When you interact with RabuShinAIGM through Discord, we may receive information made available by Discord that is necessary to operate the application, including:
+
+Discord user ID;
+Discord username;
+display name or server nickname;
+server or interaction identifiers where necessary;
+campaign membership information; and
+information associated with your interaction with the application.
+
+We do not intentionally collect unrelated Discord conversations that are not provided to or required by RabuShinAIGM.
+
+Campaign Information
+
+RabuShinAIGM may store information associated with campaigns you create or join, including:
+
+campaign ID;
+campaign name;
+campaign join code;
+campaign owner;
+campaign membership;
+campaign state;
+world state;
+encounter state;
+multiplayer synchronization information; and
+campaign progress.
+Character Information
+
+RabuShinAIGM may store information you create for game characters, including:
+
+character name;
+species or race;
+class;
+level;
+background;
+ability scores;
+hit points;
+armor class;
+inventory;
+equipment;
+currency;
+spells;
+spell slots or similar resources;
+abilities and features;
+conditions;
+character description;
+backstory;
+notes;
+character portrait; and
+other tabletop gameplay information.
+Campaign Communications
+
+When communication features are used, RabuShinAIGM may process or store:
+
+campaign chat;
+party chat;
+actions submitted during gameplay;
+journal content;
+player notes;
+messages sent to the AI Game Master; and
+AI Game Master responses.
+
+Information shared in multiplayer campaign areas may be visible to other members of that campaign.
+
+AI Game Master Information
+
+When you use AI Game Master features, information necessary to generate a response may be transmitted to an AI service provider such as OpenAI.
+
+Depending on the context of the request, this may include:
+
+your submitted action;
+recent campaign conversation;
+character information;
+party information;
+current location;
+encounter or combat state;
+game rules or instructions;
+relevant campaign history; and
+other information necessary for the AI Game Master to respond appropriately.
+
+Do not include sensitive personal information in AI Game Master prompts unless necessary.
+
+Technical and Operational Information
+
+We may process limited technical information necessary to operate, troubleshoot, and protect the Service, such as:
+
+application errors;
+timestamps;
+synchronization status;
+request status;
+application version;
+multiplayer connection information;
+diagnostic information; and
+security-related events.
+
+Where practical, diagnostic information is designed to avoid unnecessary personal information.
+
+2. Information We Do Not Intentionally Collect
+
+RabuShinAIGM is not designed to intentionally collect:
+
+government identification numbers;
+financial-account passwords;
+credit-card information;
+medical records;
+precise GPS location;
+biometric identifiers; or
+unrelated private Discord messages.
+
+Users should not submit this type of information through campaign chat, character information, journals, or AI Game Master prompts.
+
+3. OpenAI API Credentials
+
+If RabuShinAIGM allows you to provide your own OpenAI API key, that credential is used only to authenticate requests made using your OpenAI API account.
+
+Your API key should not be included in campaign chat or exposed to other players.
+
+Where RabuShinAIGM stores an API credential locally, it should be protected using the security mechanisms implemented by the application.
+
+RabuShinAIGM does not intentionally share one user's private API key with another campaign participant.
+
+Users are responsible for maintaining the security and billing status of their own OpenAI API account.
+
+4. How We Use Information
+
+We use information processed through RabuShinAIGM to:
+
+create and maintain user sessions;
+identify users interacting with the application;
+create and manage campaigns;
+allow users to join multiplayer campaigns;
+save characters and character progress;
+synchronize multiplayer game information;
+provide campaign chat;
+maintain combat and encounter state;
+generate AI Game Master responses;
+maintain journals and campaign history;
+display appropriate game information;
+prevent unauthorized campaign access;
+detect abuse or security issues;
+troubleshoot errors;
+maintain and improve the Service; and
+comply with applicable legal obligations.
+
+We do not sell personal information for monetary compensation.
+
+5. AI Processing
+
+When AI Game Master features are used, relevant game information is sent to the configured AI provider so that it can generate a response.
+
+For OpenAI-powered features, prompts and responses are processed according to OpenAI's applicable terms, privacy policies, and API data practices.
+
+OpenAI currently states that API inputs and outputs are not used to train its models by default unless the API customer explicitly opts into applicable data-sharing programs. Users should review OpenAI's current policies because provider practices may change.
+
+6. How Information Is Shared
+
+We do not sell RabuShinAIGM user data to advertisers.
+
+Information may be disclosed in the following situations.
+
+Other Campaign Participants
+
+Multiplayer campaign members may receive information necessary for shared gameplay, including:
+
+character information;
+character portraits;
+game actions;
+campaign chat;
+party information;
+combat state;
+dice results; and
+AI Game Master responses.
+Discord
+
+Information transmitted through Discord remains subject to Discord's systems and policies.
+
+Discord may process information relating to application interactions as part of operating its platform.
+
+Supabase
+
+RabuShinAIGM may use Supabase for database, authentication, synchronization, realtime, storage, or related backend services.
+
+Information necessary for those services may therefore be processed by Supabase.
+
+Supabase describes database and other backend services that may store and process application customer data and provides security mechanisms including Row Level Security.
+
+OpenAI
+
+Relevant prompts and game information may be transmitted to OpenAI when OpenAI-powered AI Game Master features are used.
+
+Hosting and Infrastructure Providers
+
+Information may be processed by the hosting, networking, database, logging, or infrastructure provider used to operate production RabuShinAIGM services.
+
+The specific provider may change as the Service develops.
+
+Legal or Security Requirements
+
+Information may be disclosed where reasonably necessary to:
+
+comply with applicable law;
+respond to valid legal process;
+investigate fraud or abuse;
+protect users;
+protect the security of RabuShinAIGM; or
+protect legal rights.
+7. Data Retention
+
+We retain information only for as long as reasonably necessary for the purpose for which it was collected, operation of active campaigns, security, dispute resolution, legal obligations, backups, and legitimate operational purposes.
+
+Campaign information may remain stored while a campaign remains active.
+
+Information may remain temporarily in backups after deletion from active systems.
+
+We may establish more specific retention periods as the production infrastructure develops.
+
+8. Account and Campaign Deletion
+
+Users may request deletion of personal information associated with RabuShinAIGM.
+
+Depending on the information and campaign structure, deletion may include:
+
+removing an account association;
+removing campaign membership;
+deleting owned character information;
+deleting stored profile information; or
+deleting other personally associated information.
+
+Some campaign information may need to be retained or anonymized where removing it would damage shared campaign history or where retention is legally required.
+
+Instructions for requesting deletion are available at:
+
+[DATA DELETION PAGE URL]
+
+Privacy requests may also be sent to:
+
+[PRIVACY EMAIL]
+
+9. User Privacy Rights
+
+Depending on where you live, applicable privacy laws may provide rights to:
+
+request access to personal information;
+request correction;
+request deletion;
+request a copy of certain information;
+object to certain processing;
+restrict certain processing; or
+withdraw consent where processing relies on consent.
+
+To make a request, contact:
+
+[PRIVACY EMAIL]
+
+We may need to verify that the requester controls the relevant Discord or RabuShinAIGM account before fulfilling a request.
+
+10. Security
+
+We use reasonable administrative and technical safeguards intended to protect information handled through RabuShinAIGM.
+
+These may include:
+
+authenticated access;
+authorization controls;
+database access policies;
+encrypted network connections;
+restricted application credentials;
+user-specific access controls; and
+secure credential handling.
+
+No online system can guarantee absolute security.
+
+Users should never post passwords, private API keys, or other credentials in campaign chat.
+
+11. International Processing
+
+Third-party providers used by RabuShinAIGM may process data from locations outside your state, province, or country.
+
+By using the Service, information may therefore be processed in jurisdictions with privacy laws different from those where you live.
+
+Where required, appropriate mechanisms will be used for international data processing.
+
+12. Children's Privacy
+
+RabuShinAIGM is designed for users who are legally eligible to use Discord.
+
+We do not knowingly use RabuShinAIGM to solicit personal information from children who are below the age permitted to use Discord in their jurisdiction.
+
+If you believe information from an ineligible minor has been collected, contact us so that it can be reviewed and, where appropriate, deleted.
+
+13. Third-Party Services
+
+RabuShinAIGM may interact with services operated by other companies.
+
+Those companies have their own privacy practices.
+
+Relevant providers may include:
+
+Discord;
+OpenAI;
+Supabase; and
+the current production hosting provider.
+
+Users should review the privacy policies of those services.
+
+Discord itself explains that third-party apps operate independently and that developers are responsible for disclosing what their apps do with information.
+
+14. Changes to This Privacy Policy
+
+We may update this Privacy Policy when:
+
+RabuShinAIGM features change;
+data practices change;
+third-party providers change;
+laws change; or
+platform requirements change.
+
+The current policy will display a "Last Updated" date.
+
+Material changes may also be announced through the application, website, Discord application page, or another reasonable communication method.
+
+15. Contact Us
+
+Questions, privacy inquiries, and deletion requests may be submitted to:
+
+RabuShinAIGM
+Privacy Email: [PRIVACY EMAIL]
+Support Email: [SUPPORT EMAIL]
+Website: [WEBSITE URL]
+Data Deletion: [DATA DELETION PAGE URL]
