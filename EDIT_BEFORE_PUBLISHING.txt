@@ -1,0 +1,8 @@
+RABUSHIN PUBLIC SITE - EDIT BEFORE PUBLISHING
+
+1. Open site-config.js.
+2. Replace REPLACE_WITH_YOUR_SUPPORT_SERVER_INVITE with a permanent invite to your Community-enabled RabuShin support server.
+3. Optional but recommended: set supportEmail to a dedicated public support/privacy email.
+4. Confirm websiteUrl matches the actual GitHub Pages/public URL.
+5. Review Terms/Privacy with qualified legal counsel if you need legal advice or have commercial/regulated requirements.
+6. Audit all D&D-derived public content against SRD 5.2.1/open-license coverage before Discord Discovery.
